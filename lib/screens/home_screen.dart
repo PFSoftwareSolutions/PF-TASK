@@ -45,7 +45,7 @@ class _HomeScreenState extends State<HomeScreen> {
         children: [
           (tasks.isNotEmpty)
               ? ListView.builder(
-                  padding: const EdgeInsets.all(10.0),
+                  padding: const EdgeInsets.fromLTRB(10.0, 10.0, 10.0, 90.0),
                   itemCount: tasks.length,
                   itemBuilder: (context, index) {
                     return Container(
@@ -94,10 +94,10 @@ class _HomeScreenState extends State<HomeScreen> {
           Positioned(
             bottom: 0,
             child: Container(
-              height: 70,
+              height: 80,
               width: MediaQuery.of(context).size.width,
               decoration: BoxDecoration(
-                color: Colors.grey.shade400,
+                color: Colors.grey.shade300.withOpacity(0.5),
               ),
               child: Padding(
                 padding: const EdgeInsets.all(10.0),
